@@ -28,6 +28,9 @@ gimp-data-extras
 gimp-gmic 
 gimp-plugin-registry 
 inkscape
+virtualbox
+virtualbox-ext-pack
+virtualbox-guest-additions-iso
 
 
 
