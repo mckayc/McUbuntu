@@ -13,13 +13,20 @@ sudo add-apt-repository ppa:peterlevi/ppa -y
 sudo apt-get update 
 
 #Remove Packages
-sudo apt-get remove -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins
+sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins
 
 #Install Packages
 sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic nemo playonlinux gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso qbittorrent variety variety-slideshow blender audacity lmms openvpn network-manager-openvpn-gnome
 
+#Install Google WebFonts
+cd && wget http://webupd8.googlecode.com/files/install-google-fonts
+chmod +x install-google-fonts
+./install-google-fonts
+
 #Upgrade all packages
 sudo apt-get upgrade -y
+
+
 
 
 
