@@ -24,7 +24,7 @@ sudo apt-get upgrade -y
 
 
 #Install Google WebFonts
-sudo apt-get install -y murcurial
+sudo apt-get install -y mercurial
 
 # written by Simon <simonjwiles@gmail.com>
 # inspired by a script written by Michalis Georgiou <mechmg93@gmail.com>
