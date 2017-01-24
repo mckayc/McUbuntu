@@ -11,7 +11,6 @@ sudo add-apt-repository ppa:peterlevi/ppa -y
 
 #Update all packages
 sudo apt-get update 
-sudo apt-get upgrade
 
 #Remove Packages
 sudo apt-get remove rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins
@@ -19,8 +18,8 @@ sudo apt-get remove rhythmbox transmission-gtk transmission-common totem totem-c
 #Install Packages
 sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic nemo playonlinux gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso qbittorrent variety variety-slideshow blender audacity lmms openvpn network-manager-openvpn-gnome
 
-
-
+#Upgrade all packages
+sudo apt-get upgrade -y
 
 
 
