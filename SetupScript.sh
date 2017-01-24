@@ -21,8 +21,6 @@ sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic nem
 #Upgrade all packagesi
 sudo apt-get upgrade -y
 
-
-
 #Install Google WebFonts
 sudo apt-get install -y mercurial
 
