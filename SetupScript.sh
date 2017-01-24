@@ -1,30 +1,22 @@
 #!/bin/bash
-# Simple setup.sh for configuring my Linux dev environment
+# Setup script for installing all my favorite software.
+
+#Add PPA Repositories
 
 
-# Setup git stuff
-sudo apt-get install git
-git config --global user.name "Dallin Christensen"
-git config --global user.email dallin.christensen@gmail.com
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-sudo apt-get install meld
-git config --global diff.tool meld
-git config --global merge.tool meld
+#Update all packages
 
 
-# Guake (dropdown terminal)
-sudo apt-get install guake
+#Install Packages
 
 
-# Setup oh-my-zsh
-sudo apt-get install zsh
-sudo apt-get install wget
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-export ZSH_THEME="afowler"
 
 
-# Pithos (Pandora client)
-sudo apt-get install pithos
+
+
+
+
+
 
 
 # Spotify
