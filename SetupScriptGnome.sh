@@ -16,6 +16,7 @@ sudo add-apt-repository ppa:pmjdebruijn/darktable-release -y
 sudo add-apt-repository ppa:peterlevi/ppa -y
 sudo add-apt-repository ppa:daniel.pavel/solaar -y
 sudo add-apt-repository ppa:webupd8team/atom -y
+sudo add-apt-repository ppa:graphics-drivers/ppa -y
 
 #Update all packages
 sudo apt-get update 
