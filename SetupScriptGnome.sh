@@ -26,11 +26,17 @@ sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem
 #Install Packages
 sudo apt-get install -y google-chrome-stable kdenlive kde-runtime darktable vlc synaptic nemo gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent variety variety-slideshow blender audacity lmms openvpn network-manager-openvpn-gnome solaar solaar-gnome3 atom playonlinux
 
-#Upgrade all packagesi
+#Upgrade all packages
 sudo apt-get upgrade -y
 
 #Install Google WebFonts
 curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install_debian.sh | sh
+
+#Install Opera Browser
+wget -O - http://deb.opera.com/archive.key | sudo apt-key add -
+sudo sh -c 'echo "deb http://deb.opera.com/opera-stable/ stable non-free" >> /etc/apt/sources.list.d/opera.list' 
+sudo apt-get update 
+sudo apt-get -y install opera
 
 # -----------------------------------------
 #Install things that need confirmation last
