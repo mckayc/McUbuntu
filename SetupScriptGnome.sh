@@ -11,12 +11,12 @@ google-chrome-stable
 # Install Chromium (note: Spotify/Flash does not work currently in Chromium)
 # chromium-browser chrome-gnome-shell 
 
+#sudo add-apt-repository ppa:graphics-drivers/ppa -y
 sudo add-apt-repository ppa:kdenlive/kdenlive-stable -y
 sudo add-apt-repository ppa:pmjdebruijn/darktable-release -y
 sudo add-apt-repository ppa:peterlevi/ppa -y
 sudo add-apt-repository ppa:daniel.pavel/solaar -y
 sudo add-apt-repository ppa:webupd8team/atom -y
-sudo add-apt-repository ppa:graphics-drivers/ppa -y
 
 #Update all packages
 sudo apt-get update 
@@ -42,7 +42,6 @@ sudo apt-get -y install opera
 # -----------------------------------------
 #Install things that need confirmation last
 sudo apt-get install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso
-
 
 # -----------------------------------------
 # For dual monitor graphics problems:
