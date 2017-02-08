@@ -44,6 +44,13 @@ sudo apt-get -y install opera
 sudo apt-get install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso
 
 
+# -----------------------------------------
+# For dual monitor graphics problems:
+# sudo gedit /etc/default/grub (change "splash" to "nosplash")
+# sudo update-grub
+# -----------------------------------------
+
+
 
 
 
