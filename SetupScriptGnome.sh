@@ -45,10 +45,12 @@ sudo apt-get -y install opera
 sudo apt-get install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso
 
 # -----------------------------------------
-# For dual monitor graphics problems:
+# For dual monitor graphics problems: Using 
 # sudo gedit /etc/default/grub (change "splash" to "nosplash")
 # sudo update-grub
 # -----------------------------------------
+# http://askubuntu.com/questions/64086/how-can-i-change-or-install-screensavers
+# http://askubuntu.com/questions/292995/configure-screensaver-in-ubuntu
 
 
 
