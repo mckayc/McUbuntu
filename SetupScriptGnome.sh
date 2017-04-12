@@ -18,6 +18,7 @@ sudo add-apt-repository ppa:peterlevi/ppa -y
 sudo add-apt-repository ppa:daniel.pavel/solaar -y
 sudo add-apt-repository ppa:webupd8team/atom -y
 sudo add-apt-repository ppa:obsproject/obs-studio -y
+sudo add-apt-repository ppa:peek-developers/stable -y
 
 #Update all packages
 sudo apt-get update 
@@ -26,7 +27,7 @@ sudo apt-get update
 sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
 
 #Install Packages
-sudo apt-get install -y google-chrome-stable kdenlive kde-runtime darktable vlc synaptic nemo gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent variety variety-slideshow blender audacity lmms openvpn network-manager-openvpn-gnome solaar solaar-gnome3 atom playonlinux ffmpeg obs-studio mirage shutter
+sudo apt-get install -y google-chrome-stable kdenlive kde-runtime darktable vlc synaptic nemo gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent variety variety-slideshow blender audacity lmms openvpn network-manager-openvpn-gnome solaar solaar-gnome3 atom playonlinux ffmpeg obs-studio mirage shutter peek
 
 #Upgrade all packages
 sudo apt-get upgrade -y
