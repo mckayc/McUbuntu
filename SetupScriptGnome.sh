@@ -14,11 +14,9 @@ google-chrome-stable
 #sudo add-apt-repository ppa:graphics-drivers/ppa -y
 sudo add-apt-repository ppa:kdenlive/kdenlive-stable -y
 sudo add-apt-repository ppa:pmjdebruijn/darktable-release -y
-sudo add-apt-repository ppa:peterlevi/ppa -y
-sudo add-apt-repository ppa:daniel.pavel/solaar -y
-sudo add-apt-repository ppa:webupd8team/atom -y
 sudo add-apt-repository ppa:obsproject/obs-studio -y
-sudo add-apt-repository ppa:peek-developers/stable -y
+sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make -y
+
 
 #Update all packages
 sudo apt-get update 
@@ -27,7 +25,10 @@ sudo apt-get update
 sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
 
 #Install Packages
-sudo apt-get install -y google-chrome-stable kdenlive kde-runtime darktable vlc synaptic nemo gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent variety variety-slideshow blender audacity lmms openvpn network-manager-openvpn-gnome solaar solaar-gnome3 atom playonlinux ffmpeg obs-studio mirage shutter peek
+sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn solaar playonlinux ffmpeg obs-studio mirage shutter ubuntu-make
+
+#Install VS Code via Umake
+sudo umake web visual-studio-code
 
 #Upgrade all packages
 sudo apt-get upgrade -y
