@@ -27,9 +27,6 @@ sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem
 #Install Packages
 sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn solaar playonlinux ffmpeg obs-studio mirage shutter ubuntu-make
 
-#Install VS Code via Umake
-sudo umake web visual-studio-code
-
 #Upgrade all packages
 sudo apt-get upgrade -y
 
@@ -44,7 +41,11 @@ sudo apt-get -y install opera
 
 # -----------------------------------------
 #Install things that need confirmation last
+
 sudo apt-get install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso
+
+#Install VS Code via Umake
+sudo umake web visual-studio-code
 
 # -----------------------------------------
 # For dual monitor graphics problems: Using 
