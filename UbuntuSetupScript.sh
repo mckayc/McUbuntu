@@ -16,6 +16,7 @@ sudo add-apt-repository ppa:kdenlive/kdenlive-stable -y
 sudo add-apt-repository ppa:pmjdebruijn/darktable-release -y
 sudo add-apt-repository ppa:obsproject/obs-studio -y
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make -y
+sudo add-apt-repository ppa:rikmills/latte-dock -y
 
 
 #Update all packages
@@ -25,7 +26,7 @@ sudo apt-get update
 sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
 
 #Install Packages
-sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage shutter ubuntu-make
+sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage shutter ubuntu-make latte-dock
 
 #Upgrade all packages
 sudo apt-get upgrade -y
