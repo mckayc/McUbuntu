@@ -3,10 +3,11 @@
 
 #Add PPA Repositories
 
-# Install Google Chrome
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-google-chrome-stable
+# Install Google Chrome - Do this manually. This way you have a browser while the script is running.
+
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+# sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+# google-chrome-stable
 
 # Install Chromium (note: Spotify/Flash does not work currently in Chromium)
 # chromium-browser chrome-gnome-shell 
@@ -15,8 +16,8 @@ google-chrome-stable
 sudo add-apt-repository ppa:kdenlive/kdenlive-stable -y
 sudo add-apt-repository ppa:pmjdebruijn/darktable-release -y
 sudo add-apt-repository ppa:obsproject/obs-studio -y
-sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make -y
-sudo add-apt-repository ppa:rikmills/latte-dock -y
+#sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make -y
+#sudo add-apt-repository ppa:rikmills/latte-dock -y
 
 
 #Update all packages
@@ -26,7 +27,10 @@ sudo apt-get update
 sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
 
 #Install Packages
-sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage shutter ubuntu-make latte-dock
+sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage shutter 
+
+#Install Latte-Dock
+#sudo apt-get install -y ubuntu-make latte-dock
 
 #Upgrade all packages
 sudo apt-get upgrade -y
