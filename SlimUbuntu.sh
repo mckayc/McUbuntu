@@ -20,6 +20,9 @@ sudo apt-get autoremove -y
 #Upgrade all packages
 sudo apt-get upgrade -y
 
+#Display remaining free space
+df -h
+
 
 
 
