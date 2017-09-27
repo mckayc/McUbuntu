@@ -5,10 +5,10 @@
 sudo apt-get update 
 
 #Remove Packages
-sudo apt-get remove --purge libreoffice* rhythmbox*
+sudo apt-get purge -y libreoffice* rhythmbox*
 
-sudo apt-get clean
-sudo apt-get autoremove
+sudo apt-get clean -y
+sudo apt-get autoremove -y
 
 #Upgrade all packages
 sudo apt-get upgrade -y
