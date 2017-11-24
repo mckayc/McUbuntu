@@ -12,7 +12,7 @@ sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /e
 sudo apt-get update 
 
 #Remove Packages
-sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
+sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer ktorrent
 
 #Install Packages
 sudo apt-get install -y google-chrome-stable vlc synaptic qbittorrent openvpn network-manager-openvpn kodi gparted
