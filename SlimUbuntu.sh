@@ -18,7 +18,7 @@ sudo apt-get clean -y
 sudo apt-get autoremove -y
 
 #Upgrade all packages
-sudo apt install chromium -y
+sudo apt install chromium-browser -y
 sudo apt-get upgrade -y
 
 #Display remaining free space
