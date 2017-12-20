@@ -19,6 +19,7 @@ sudo apt-get autoremove -y
 
 #Upgrade all packages
 sudo apt install chromium-browser -y
+sudo apt install firefox -y
 sudo apt-get upgrade -y
 
 #Display remaining free space
