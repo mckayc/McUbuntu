@@ -12,6 +12,11 @@
 # Install Chromium (note: Spotify/Flash does not work currently in Chromium)
 # chromium-browser chrome-gnome-shell 
 
+# Install Etcher (USB Disk Creation Software)
+echo "deb https://dl.bintray.com/resin-io/debian stable etcher" | sudo tee /etc/apt/sources.list.d/etcher.list
+sudo apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 379CE192D401AB61
+
+
 #sudo add-apt-repository ppa:graphics-drivers/ppa -y
 sudo add-apt-repository ppa:kdenlive/kdenlive-stable -y
 sudo add-apt-repository ppa:pmjdebruijn/darktable-release -y
@@ -27,7 +32,7 @@ sudo apt-get update
 sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
 
 #Install Packages
-sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage shutter hydrogen qjackctl exfat-utils gparted
+sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage shutter hydrogen qjackctl exfat-utils gparted etcher-electron
 
 #Install Latte-Dock
 #sudo apt-get install -y ubuntu-make latte-dock
