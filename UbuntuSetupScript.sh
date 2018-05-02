@@ -41,7 +41,7 @@ sudo apt-get install -y google-chrome-stable kdenlive darktable vlc synaptic gim
 sudo apt-get upgrade -y
 
 #Install Google WebFonts
-curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install_debian.sh | sh
+curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | bash
 
 #Install Opera Browser
 wget -O - http://deb.opera.com/archive.key | sudo apt-key add -
