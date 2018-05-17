@@ -22,6 +22,7 @@ sudo add-apt-repository ppa:kdenlive/kdenlive-stable -y
 sudo add-apt-repository ppa:pmjdebruijn/darktable-release -y
 sudo add-apt-repository ppa:obsproject/obs-studio -y
 sudo add-apt-repository ppa:nilarimogard/webupd8 -y
+sudo add-apt-repository ppa:flexiondotorg/youtube-dl-gui -y
 #sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make -y
 #sudo add-apt-repository ppa:rikmills/latte-dock -y
 
@@ -33,7 +34,7 @@ sudo apt-get update
 sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
 
 #Install Packages
-sudo apt-get install -y kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage shutter hydrogen qjackctl exfat-utils gparted etcher-electron rar unrar-free woeusb vlc-plugin-fluidsynth fluid-soundfont-gs fluid-soundfont-gm
+sudo apt-get install -y kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage shutter hydrogen qjackctl exfat-utils gparted etcher-electron rar unrar-free woeusb vlc-plugin-fluidsynth fluid-soundfont-gs fluid-soundfont-gm youtube-dlg
 
 #Install Latte-Dock
 #sudo apt-get install -y ubuntu-make latte-dock
