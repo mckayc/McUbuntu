@@ -36,7 +36,7 @@ sudo apt-get update
 sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
 
 #Install Packages
-sudo apt-get install -y kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage shutter hydrogen qjackctl exfat-utils gparted etcher-electron rar unrar-free woeusb vlc-plugin-fluidsynth fluid-soundfont-gs fluid-soundfont-gm youtube-dlg wireshark
+sudo apt-get install -y kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage shutter hydrogen qjackctl exfat-utils gparted etcher-electron rar unrar-free woeusb vlc-plugin-fluidsynth fluid-soundfont-gs fluid-soundfont-gm youtube-dlg 
 
 #Install Latte-Dock
 #sudo apt-get install -y ubuntu-make latte-dock
@@ -50,19 +50,12 @@ curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | 
 # -----------------------------------------
 #Install things that need confirmation last
 
-sudo apt-get install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso
+sudo apt-get install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso wireshark
 
 #Install VS Code via Umake
 sudo umake web visual-studio-code
 
-# -----------------------------------------
-# For dual monitor graphics problems: Using 
-# sudo gedit /etc/default/grub (change "splash" to "nosplash")
-# sudo update-grub
-# -----------------------------------------
-# http://askubuntu.com/questions/64086/how-can-i-change-or-install-screensavers
-# http://askubuntu.com/questions/292995/configure-screensaver-in-ubuntu
-# command to lock: xscreensaver-command -lock
+
 
 
 
