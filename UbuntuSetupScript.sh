@@ -19,11 +19,11 @@ sudo apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 379CE192D401AB61
 
 #sudo add-apt-repository ppa:graphics-drivers/ppa -y
 sudo add-apt-repository ppa:kdenlive/kdenlive-stable -y
-sudo add-apt-repository ppa:pmjdebruijn/darktable-release -y
+#sudo add-apt-repository ppa:pmjdebruijn/darktable-release -y
 sudo add-apt-repository ppa:obsproject/obs-studio -y
 sudo add-apt-repository ppa:nilarimogard/webupd8 -y
-sudo add-apt-repository ppa:flexiondotorg/youtube-dl-gui -y
-sudo add-apt-repository ppa:wireshark-dev/stable -y
+#sudo add-apt-repository ppa:flexiondotorg/youtube-dl-gui -y
+#sudo add-apt-repository ppa:wireshark-dev/stable -y
 
 #sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make -y
 #sudo add-apt-repository ppa:rikmills/latte-dock -y
