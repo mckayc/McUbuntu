@@ -1,28 +1,18 @@
-[KDE Keyboard Layout Switcher][Global Shortcuts]
-Disable Touchpad=Touchpad Off
-Enable Touchpad=Touchpad On
-Switch to Next Keyboard Layout=Ctrl+Alt+K
-Toggle Touchpad=Touchpad Toggle
-{19014a76-8e72-497d-b035-c1f8d76364ed}=Meta+Shift+Print
-{5d95afe5-7662-4471-ad55-fcdce80881f1}=Shift+Print
-{9db7b46a-d1b3-40b3-9c1e-67175a3c3bd5}=Meta+Print
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
-{e33803f3-b1ad-4731-aadb-15556aef02c6}=Print
-
 [kaccess][Global Shortcuts]
 Toggle Screen Reader On and Off=Meta+Alt+S
 
-[kded5][Global Shortcuts]
-Decrease Keyboard Brightness=Keyboard Brightness Down
-Decrease Screen Brightness=Monitor Brightness Down
-Hibernate=Hibernate
-Increase Keyboard Brightness=Keyboard Brightness Up
-Increase Screen Brightness=Monitor Brightness Up
-PowerOff=Power Off
+[kcm_touchpad][Global Shortcuts]
+Disable Touchpad=Touchpad Off
+Enable Touchpad=Touchpad On
 Show System Activity=Ctrl+Esc
-Sleep=Meta+Del
-Toggle Keyboard Backlight=Keyboard Light On/Off
+Switch to Next Keyboard Layout=Ctrl+Alt+K
+Toggle Touchpad=Touchpad Toggle
 display=Display; Meta+P
+{4fa2288e-ef8a-4372-a488-cc9e970c9289}=Meta+Print
+{520828be-e6c5-4ae9-b42f-72e671bf6542}=Print
+{7cc6e6d0-db20-4a69-ab36-9c43d3645454}=Meta+Shift+Print
+{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none
+{f51ef3c3-a0ae-4290-ac63-a659cbf10b00}=Shift+Print
 
 [kmix][Global Shortcuts]
 decrease_microphone_volume=Alt+[
@@ -38,14 +28,10 @@ run command on clipboard contents=Alt+Shift+F2
 
 [ksmserver][Global Shortcuts]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown
-Lock Session=Ctrl+Alt+L; Screensaver
+Lock Session=Meta+L; Screensaver
 Log Out=Ctrl+Alt+Del
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
-
-[ktorrent][Global Shortcuts]
-queue_suspend=Alt+Shift+P
-show_kt=Alt+Shift+T
 
 [kwin][Global Shortcuts]
 Activate Window Demanding Attention=Ctrl+Alt+A
@@ -122,7 +108,7 @@ Walk Through Windows of Current Application=Alt+`
 Walk Through Windows of Current Application (Reverse)=Alt+~
 Walk Through Windows of Current Application Alternative=none
 Walk Through Windows of Current Application Alternative (Reverse)=none
-Window Above Other Windows=none
+Window Above Other Windows=Meta+Q
 Window Below Other Windows=none
 Window Close=Alt+F4
 Window Fullscreen=none
@@ -135,7 +121,7 @@ Window Maximize Vertical=none
 Window Minimize=Meta+Down
 Window Move=none
 Window No Border=none
-Window On All Desktops=none
+Window On All Desktops=Meta+A
 Window One Desktop Down=Meta+Shift+PgDown
 Window One Desktop Up=Meta+Shift+PgUp
 Window One Desktop to the Left=none
@@ -194,44 +180,23 @@ view_actual_size=none
 view_zoom_in=Meta+=
 view_zoom_out=Meta+-
 
-[lattedock][Global Shortcuts]
-activate task manager entry 1=none
-activate task manager entry 10=none
-activate task manager entry 2=none
-activate task manager entry 3=none
-activate task manager entry 4=none
-activate task manager entry 5=none
-activate task manager entry 6=none
-activate task manager entry 7=none
-activate task manager entry 8=none
-activate task manager entry 9=none
-activate widget 10=none
-activate widget 57=Meta+Space
-clear-history=none
-clipboard_action=none
-cycleNextAction=none
-cyclePrevAction=none
-edit_clipboard=none
-new instance for task manager entry 1=Meta+Ctrl+1
-new instance for task manager entry 10=Meta+Ctrl+0
-new instance for task manager entry 2=Meta+Ctrl+2
-new instance for task manager entry 3=Meta+Ctrl+3
-new instance for task manager entry 4=Meta+Ctrl+4
-new instance for task manager entry 5=Meta+Ctrl+5
-new instance for task manager entry 6=Meta+Ctrl+6
-new instance for task manager entry 7=Meta+Ctrl+7
-new instance for task manager entry 8=Meta+Ctrl+8
-new instance for task manager entry 9=Meta+Ctrl+9
-repeat_action=none
-show latte dock=Meta+`
-show-barcode=none
-show-on-mouse-pos=none
-
 [mediacontrol][Global Shortcuts]
+mediavolumedown=none
+mediavolumeup=none
 nextmedia=Media Next
 playpausemedia=Media Play
 previousmedia=Media Previous
 stopmedia=Media Stop
+
+[org_kde_powerdevil][Global Shortcuts]
+Decrease Keyboard Brightness=Keyboard Brightness Down
+Decrease Screen Brightness=Monitor Brightness Down
+Hibernate=Hibernate
+Increase Keyboard Brightness=Keyboard Brightness Up
+Increase Screen Brightness=Monitor Brightness Up
+PowerOff=Power Off
+Sleep=Sleep
+Toggle Keyboard Backlight=Keyboard Light On/Off
 
 [plasmashell][Global Shortcuts]
 activate task manager entry 1=Meta+1
@@ -244,16 +209,13 @@ activate task manager entry 6=Meta+6
 activate task manager entry 7=Meta+7
 activate task manager entry 8=Meta+8
 activate task manager entry 9=Meta+9
-activate widget 3=none
-activate widget 40=none
-activate widget 46=none
-activate widget 53=none
+activate widget 3=Alt+F1
 clear-history=none
 clipboard_action=Ctrl+Alt+X
 cycleNextAction=none
 cyclePrevAction=none
 edit_clipboard=none
-manage activities=Meta+Q
+manage activities=none
 next activity=Meta+Tab
 previous activity=Meta+Shift+Tab
 repeat_action=Ctrl+Alt+R
