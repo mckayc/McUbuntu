@@ -1,7 +1,7 @@
 [kaccess][Global Shortcuts]
 Toggle Screen Reader On and Off=Meta+Alt+S
 
-[kcm_touchpad][Global Shortcuts]
+[kded5][Global Shortcuts]
 Disable Touchpad=Touchpad Off
 Enable Touchpad=Touchpad On
 Show System Activity=Ctrl+Esc
@@ -29,7 +29,7 @@ run command on clipboard contents=Alt+Shift+F2
 [ksmserver][Global Shortcuts]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown
 Lock Session=Meta+L; Screensaver
-Log Out=Ctrl+Alt+Del
+Log Out=none
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp
 
@@ -195,7 +195,7 @@ Hibernate=Hibernate
 Increase Keyboard Brightness=Keyboard Brightness Up
 Increase Screen Brightness=Monitor Brightness Up
 PowerOff=Power Off
-Sleep=Sleep
+Sleep=Ctrl+Alt+Del
 Toggle Keyboard Backlight=Keyboard Light On/Off
 
 [plasmashell][Global Shortcuts]
