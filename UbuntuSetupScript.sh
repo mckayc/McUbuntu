@@ -83,3 +83,13 @@ mv McGlobalShortcuts.kksrc ~/.kde/share/config/kdeglobals
 # BEFORE starting a new system, you should navigate to ~/.local/share/kdenlive/ then right click on the effects folder and zip it. Upload it here.
 wget https://github.com/mckayc/McUbuntu/blob/master/effects.zip?raw=true
 unzip effects.zip?raw=true -d ~/.local/share/kdenlive/
+
+# Copy over Darktable Styles
+# BEFORE starting a new system, you should navigate to ~/.config/darktable/ then right click on the styles folder and zip it. Upload it here.
+wget https://github.com/mckayc/McUbuntu/blob/master/styles.zip?raw=true
+unzip effects.zip?raw=true -d ~/.config/darktable/
+
+# Copy over OBS Profile and scenes
+# BEFORE starting a new system, you should navigate to ~/.config/obs-studio/ then right click on the basic folder and zip it. Upload it here.
+wget https://github.com/mckayc/McUbuntu/blob/master/basic.zip?raw=true
+unzip effects.zip?raw=true -d ~/.config/obs-studio/
