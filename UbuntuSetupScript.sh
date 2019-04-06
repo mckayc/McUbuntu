@@ -80,4 +80,6 @@ cp ~/.kde/share/config/kdeglobals ~/.kde/share/config/kdeglobals.bak
 mv McGlobalShortcuts.kksrc ~/.kde/share/config/kdeglobals
 
 # Copy over Kdenlive effects
-
+# BEFORE starting a new system, you should navigate to ~/.local/share/kdenlive/ then right click on the effects folder and zip it. Upload it here.
+wget https://github.com/mckayc/McUbuntu/blob/master/effects.zip?raw=true
+unzip effects.zip?raw=true -d ~/.local/share/kdenlive/
