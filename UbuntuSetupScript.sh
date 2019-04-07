@@ -9,7 +9,6 @@
 # wget http://bit.ly/mckayubuntu ; chmod +x mckayubuntu ; ./mckayubuntu
 #-------------------------------------------------------
 
-
 #Add PPA Repositories
 
 # Install Etcher (USB Disk Creation Software)
@@ -43,7 +42,7 @@ sudo apt-get update
 sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
 
 #Install Packages
-sudo apt-get install -y kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage hydrogen qjackctl exfat-utils gparted rar unrar-free woeusb vlc-plugin-fluidsynth fluid-soundfont-gs fluid-soundfont-gm speedcrunch handbrake freecad unetbootin ubuntu-make grsync
+sudo apt-get install -y kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage hydrogen qjackctl exfat-utils gparted rar unrar-free woeusb vlc-plugin-fluidsynth fluid-soundfont-gs fluid-soundfont-gm speedcrunch handbrake freecad unetbootin ubuntu-make grsync git
 
 #Not working for some reason:
 # sudo apt-get install -y shutter etcher-electron youtube-dlg
@@ -73,21 +72,63 @@ sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 
-# Copy over KDE Custom shortcuts
-wget https://raw.githubusercontent.com/mckayc/McUbuntu/master/McGlobalShortcuts.kksrc
+#------------------------------------------
+#Clone Git Repository
+git clone https://github.com/mckayc/McUbuntu
 
+
+#------------------------------------------
+#Copy configs from previous setup (backed up daily to Github repository)
+
+# Copy over KDE Custom shortcuts
 cp ~/.kde/share/config/kdeglobals ~/.kde/share/config/kdeglobals.bak
-mv McGlobalShortcuts.kksrc ~/.kde/share/config/kdeglobals
+cp ~/McUbuntu/kdeglobals ~/.kde/share/config/kdeglobals
+# Copy over Darktable Styles
+unzip ~/.config/darktable/styles.zip -d ~/.config/darktable/
+
+
+
+
+
+
+
+
+
+
+
+#------------------------------------------
+#Setup Cron Jobs 
+
+#Make Zip folders at 6:15pm Every Day
+
+
+#Darktable Styles
+crontab -l | { cat; echo "15 18 * * * zip -r ~/.config/darktable/styles.zip ~/.config/darktable/styles/"; } | crontab -
+
+
+
+#Copy files to Git repository at 6:20 Every Day
+
+#KDE Global Hotkeys
+crontab -l | { cat; echo "15 18 * * * cp ~/.kde/share/config/kdeglobals ~/McUbuntu/"; } | crontab -
+#Darktable Styles
+crontab -l | { cat; echo "15 18 * * * cp -a ~/.config/darktable/styles/ ~/McUbuntu/"; } | crontab -
+
+
+
+
+
+#Push Github repository
+
+
+
 
 # Copy over Kdenlive effects
 # BEFORE starting a new system, you should navigate to ~/.local/share/kdenlive/ then right click on the effects folder and zip it. Upload it here.
 wget https://github.com/mckayc/McUbuntu/blob/master/effects.zip?raw=true
 unzip effects.zip?raw=true -d ~/.local/share/kdenlive/
 
-# Copy over Darktable Styles
-# BEFORE starting a new system, you should navigate to ~/.config/darktable/ then right click on the styles folder and zip it. Upload it here.
-wget https://github.com/mckayc/McUbuntu/blob/master/styles.zip?raw=true
-unzip effects.zip?raw=true -d ~/.config/darktable/
+
 
 # Copy over OBS Profile and scenes
 # BEFORE starting a new system, you should navigate to ~/.config/obs-studio/ then right click on the basic folder and zip it. Upload it here.
