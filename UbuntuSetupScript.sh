@@ -109,4 +109,4 @@ crontab -l | { cat; echo "15 20 * * * cp -a ~/.config/obs-studio/basic/ ~/McUbun
 
 #Push to Github repository at 8:25 Every Day
 
-git -C ~/McUbuntu/ add --all; git -C ~/McUbuntu/ commit -m "Daily backed-up on `date +'%Y-%m-%d %H:%M:%S'`"; git -C ~/McUbuntu/ push origin master
+crontab -l | { cat; echo "15 20 * * * git -C ~/McUbuntu/ add --all; git -C ~/McUbuntu/ commit -m "Daily backed-up on `date +'%Y-%m-%d %H:%M:%S'`"; git -C ~/McUbuntu/ push origin master"; } | crontab -
