@@ -84,53 +84,29 @@ git clone https://github.com/mckayc/McUbuntu
 cp ~/.kde/share/config/kdeglobals ~/.kde/share/config/kdeglobals.bak
 cp ~/McUbuntu/kdeglobals ~/.kde/share/config/kdeglobals
 # Copy over Darktable Styles
-unzip ~/.config/darktable/styles.zip -d ~/.config/darktable/
+cp -a ~/McUbuntu/styles/ ~/.config/darktable/styles/
+# Copy over Kdenlive effects
+cp -a ~/McUbuntu/effects/ ~/.local/share/kdenlive/effects/ 
+# Copy over OBS basic
+cp -a ~/McUbuntu/basic/ ~/.config/obs-studio/basic/ 
 
-
-
-
-
-
-
-
-
-
+#Store GIT credentials
+git -C ~/McUbuntu/ config credential.helper store
 
 #------------------------------------------
 #Setup Cron Jobs 
 
-#Make Zip folders at 6:15pm Every Day
-
-
-#Darktable Styles
-crontab -l | { cat; echo "15 18 * * * zip -r ~/.config/darktable/styles.zip ~/.config/darktable/styles/"; } | crontab -
-
-
-
-#Copy files to Git repository at 6:20 Every Day
+#Copy files to Git repository at 8:20 Every Day
 
 #KDE Global Hotkeys
-crontab -l | { cat; echo "15 18 * * * cp ~/.kde/share/config/kdeglobals ~/McUbuntu/"; } | crontab -
+crontab -l | { cat; echo "15 20 * * * cp ~/.kde/share/config/kdeglobals ~/McUbuntu/"; } | crontab -
 #Darktable Styles
-crontab -l | { cat; echo "15 18 * * * cp -a ~/.config/darktable/styles/ ~/McUbuntu/"; } | crontab -
+crontab -l | { cat; echo "15 20 * * * cp -a ~/.config/darktable/styles/ ~/McUbuntu/"; } | crontab -
+#Kdenlive Effects
+crontab -l | { cat; echo "15 20 * * * cp -a ~/.local/share/kdenlive/effects/ ~/McUbuntu/"; } | crontab -
+#OBS basic (profiles and scenes)
+crontab -l | { cat; echo "15 20 * * * cp -a ~/.config/obs-studio/basic/ ~/McUbuntu/"; } | crontab -
 
+#Push to Github repository at 8:25 Every Day
 
-
-
-
-#Push Github repository
-
-
-
-
-# Copy over Kdenlive effects
-# BEFORE starting a new system, you should navigate to ~/.local/share/kdenlive/ then right click on the effects folder and zip it. Upload it here.
-wget https://github.com/mckayc/McUbuntu/blob/master/effects.zip?raw=true
-unzip effects.zip?raw=true -d ~/.local/share/kdenlive/
-
-
-
-# Copy over OBS Profile and scenes
-# BEFORE starting a new system, you should navigate to ~/.config/obs-studio/ then right click on the basic folder and zip it. Upload it here.
-wget https://github.com/mckayc/McUbuntu/blob/master/basic.zip?raw=true
-unzip effects.zip?raw=true -d ~/.config/obs-studio/
+git -C ~/McUbuntu/ add --all; git -C ~/McUbuntu/ commit -m "Daily backed-up on `date +'%Y-%m-%d %H:%M:%S'`"; git -C ~/McUbuntu/ push origin master
