@@ -1,0 +1,10 @@
+<effect type="custom" tag="volume" id="-20dB" effectcolor="#291286" version="0.2">
+ <name>-20dB</name>
+ <description>Adjust audio volume with keyframes</description>
+ <author>Dan Dennedy</author>
+ <parameter type="animated" suffix="dB" name="level" max="60" min="-60" value="108=-20" default="0">
+  <name>Gain</name>
+ </parameter>
+ <version>2</version>
+ <version>2</version>
+</effect>

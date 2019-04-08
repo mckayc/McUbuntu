@@ -1,0 +1,15 @@
+<effect type="custom" tag="affine" id="Photo Zoom" context="nomovit" effectcolor="#133061" in="0" out="149" sync_in_out="1">
+ <name>Photo Zoom</name>
+ <description>Adjust size and position of clip</description>
+ <author>Charles Yates</author>
+ <parameter type="geometry" name="transition.geometry" value="0=-270/-152:3100x1744:100;149=-370/-208:3300x1856:100" opacity="false" default="0 0 %width %height">
+  <name>Rectangle</name>
+ </parameter>
+ <parameter type="bool" name="transition.distort" value="0" default="0">
+  <name>Distort</name>
+ </parameter>
+ <parameter type="color" paramprefix="colour:" alpha="1" name="background" value="colour:0x00000000" default="colour:0x00000000">
+  <name>Background Color</name>
+ </parameter>
+ <version>3</version>
+</effect>
