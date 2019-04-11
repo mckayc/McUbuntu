@@ -83,8 +83,8 @@ git clone https://github.com/mckayc/McUbuntu
 # Copy over KDE Custom shortcuts
 cp ~/.kde/share/config/kdeglobals ~/.kde/share/config/kdeglobals.bak
 cp ~/McUbuntu/kdeglobals ~/.kde/share/config/kdeglobals
-# Copy over Darktable Styles
-cp -a ~/McUbuntu/styles/ ~/.config/darktable/styles/
+# Copy over Darktable Styles - Copy to the Downloads folder so I can manually import them
+cp -a ~/McUbuntu/styles/ ~/Downloads/darktable/styles/
 # Copy over Kdenlive effects
 cp -a ~/McUbuntu/effects/ ~/.local/share/kdenlive/effects/ 
 # Copy over OBS basic
@@ -96,17 +96,17 @@ git -C ~/McUbuntu/ config credential.helper store
 #------------------------------------------
 #Setup Cron Jobs 
 
-#Copy files to Git repository at 8:20 Every Day
+#Copy files to Git repository at 8:20 pm Every Day
 
 #KDE Global Hotkeys
-crontab -l | { cat; echo "15 20 * * * cp ~/.kde/share/config/kdeglobals ~/McUbuntu/"; } | crontab -
+crontab -l | { cat; echo "20 20 * * * cp ~/.kde/share/config/kdeglobals ~/McUbuntu/"; } | crontab -
 #Darktable Styles
-crontab -l | { cat; echo "15 20 * * * cp -a ~/.config/darktable/styles/ ~/McUbuntu/"; } | crontab -
+crontab -l | { cat; echo "20 20 * * * cp -a ~/.config/darktable/styles/ ~/McUbuntu/"; } | crontab -
 #Kdenlive Effects
-crontab -l | { cat; echo "15 20 * * * cp -a ~/.local/share/kdenlive/effects/ ~/McUbuntu/"; } | crontab -
+crontab -l | { cat; echo "20 20 * * * cp -a ~/.local/share/kdenlive/effects/ ~/McUbuntu/"; } | crontab -
 #OBS basic (profiles and scenes)
-crontab -l | { cat; echo "15 20 * * * cp -a ~/.config/obs-studio/basic/ ~/McUbuntu/"; } | crontab -
+crontab -l | { cat; echo "20 20 * * * cp -a ~/.config/obs-studio/basic/ ~/McUbuntu/"; } | crontab -
 
-#Push to Github repository at 8:25 Every Day
+#Push to Github repository at 8:25 pm Every Day
 
-crontab -l | { cat; echo "15 20 * * * git -C ~/McUbuntu/ add --all; git -C ~/McUbuntu/ commit -m "Daily backed-up on `date +'%Y-%m-%d %H:%M:%S'`"; git -C ~/McUbuntu/ push origin master"; } | crontab -
+crontab -l | { cat; echo "25 20 * * * git -C ~/McUbuntu/ add --all; git -C ~/McUbuntu/ commit -m "Daily backed-up on `date +'%Y-%m-%d %H:%M:%S'`"; git -C ~/McUbuntu/ push origin master"; } | crontab -
