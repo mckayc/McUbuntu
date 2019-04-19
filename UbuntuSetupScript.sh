@@ -41,8 +41,44 @@ sudo apt-get update
 #Remove Packages
 sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
 
-#Install Packages
-sudo apt-get install -y kdenlive darktable vlc synaptic gimp gimp-data-extras gimp-gmic gimp-plugin-registry inkscape qbittorrent blender audacity lmms openvpn network-manager-openvpn solaar playonlinux ffmpeg obs-studio mirage hydrogen qjackctl exfat-utils gparted rar unrar-free woeusb vlc-plugin-fluidsynth fluid-soundfont-gs fluid-soundfont-gm speedcrunch handbrake freecad unetbootin ubuntu-make grsync git
+#Install Packages - Need to do this line at a time so it does not break
+sudo apt-get install -y kdenlive 
+sudo apt-get install -y darktable 
+sudo apt-get install -y vlc 
+sudo apt-get install -y synaptic 
+sudo apt-get install -y gimp 
+sudo apt-get install -y gimp-data-extras 
+sudo apt-get install -y gimp-gmic 
+sudo apt-get install -y gimp-plugin-registry 
+sudo apt-get install -y inkscape 
+sudo apt-get install -y qbittorrent 
+sudo apt-get install -y blender 
+sudo apt-get install -y audacity 
+sudo apt-get install -y lmms 
+sudo apt-get install -y openvpn 
+sudo apt-get install -y network-manager-openvpn 
+sudo apt-get install -y solaar 
+sudo apt-get install -y playonlinux 
+sudo apt-get install -y ffmpeg 
+sudo apt-get install -y obs-studio 
+sudo apt-get install -y mirage 
+sudo apt-get install -y hydrogen 
+sudo apt-get install -y qjackctl 
+sudo apt-get install -y exfat-utils 
+sudo apt-get install -y gparted 
+sudo apt-get install -y rar 
+sudo apt-get install -y unrar-free 
+sudo apt-get install -y woeusb 
+sudo apt-get install -y vlc-plugin-fluidsynth 
+sudo apt-get install -y fluid-soundfont-gs 
+sudo apt-get install -y fluid-soundfont-gm 
+sudo apt-get install -y speedcrunch 
+sudo apt-get install -y handbrake 
+sudo apt-get install -y freecad 
+sudo apt-get install -y unetbootin 
+sudo apt-get install -y ubuntu-make 
+sudo apt-get install -y grsync 
+sudo apt-get install -y git
 
 #Not working for some reason:
 # sudo apt-get install -y shutter etcher-electron youtube-dlg
