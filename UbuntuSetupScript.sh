@@ -119,9 +119,9 @@ git clone https://github.com/mckayc/McUbuntu
 # Copy over KDE Custom shortcuts
 cp ~/.kde/share/config/kdeglobals ~/.kde/share/config/kdeglobals.bak
 cp ~/McUbuntu/kdeglobals ~/.kde/share/config/kdeglobals
-# Copy over Darktable Styles - Copy to the Downloads folder so I can manually import them
-cp -a ~/McUbuntu/styles/ ~/Downloads/darktable/styles/
-# Copy over Kdenlive effects
+# Copy over Darktable Styles - Copy to the Downloads folder so I can manually import them - - Need to modify this so it makes the folder first
+cp -a ~/McUbuntu/styles/ ~/Downloads/darktable/styles/ 
+# Copy over Kdenlive effects -  - Kdenlive has to be open first before this will work
 cp -a ~/McUbuntu/effects/ ~/.local/share/kdenlive/effects/ 
 # Copy over OBS basic
 cp -a ~/McUbuntu/basic/ ~/.config/obs-studio/basic/ 
