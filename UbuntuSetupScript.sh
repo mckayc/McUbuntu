@@ -63,7 +63,6 @@ sudo apt-get install -y ffmpeg
 sudo apt-get install -y obs-studio 
 sudo apt-get install -y mirage 
 sudo apt-get install -y hydrogen 
-sudo apt-get install -y qjackctl 
 sudo apt-get install -y exfat-utils 
 sudo apt-get install -y gparted 
 sudo apt-get install -y rar 
@@ -91,8 +90,13 @@ curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | 
 
 # -----------------------------------------
 #Install things that need confirmation last
+  
+sudo apt-get install -y qjackctl 
+sudo apt-get install -y virtualbox
+sudo apt-get install -y virtualbox-ext-pack
+sudo apt-get install -y virtualbox-guest-additions-iso
+sudo apt-get install -y wireshark
 
-sudo apt-get install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso wireshark
 
 #Install VS Code via Umake
 sudo umake web visual-studio-code
