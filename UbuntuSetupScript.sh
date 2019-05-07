@@ -123,9 +123,15 @@ git clone https://github.com/mckayc/McUbuntu
 # Copy over KDE Custom shortcuts
 cp ~/.kde/share/config/kdeglobals ~/.kde/share/config/kdeglobals.bak
 cp ~/McUbuntu/kdeglobals ~/.kde/share/config/kdeglobals
+# Not work yet; next time try: Adopt ~/.config/kglobalshortcutsrc to your needs - || Force kglobalaccel (apparently, responsible for the global shortcuts) to quit and restart: kquitapp kglobalaccel && sleep 2s && kglobalaccel5&
+# Remove Alt click Settings>Window Management>Window Behavior> Modifier Key
+
 # Copy over Darktable Styles - Copy to the Downloads folder so I can manually import them - - Need to modify this so it makes the folder first
+mkdir ~/Downloads/darktable/
 cp -a ~/McUbuntu/styles/ ~/Downloads/darktable/styles/ 
+
 # Copy over Kdenlive effects -  - Kdenlive has to be open first before this will work
+mkdir ~/.local/share/kdenlive/
 cp -a ~/McUbuntu/effects/ ~/.local/share/kdenlive/effects/ 
 # Copy over OBS basic
 cp -a ~/McUbuntu/basic/ ~/.config/obs-studio/basic/ 
