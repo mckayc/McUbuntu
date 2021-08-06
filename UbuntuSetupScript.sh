@@ -18,7 +18,7 @@ ppa=n
 
 echo "you entered $chrome"
 
-if ["$chrome" == "y"]
+if [$chrome == "y"];
     then
     echo "Installing Google Chrome."
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
