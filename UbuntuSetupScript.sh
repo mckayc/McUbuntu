@@ -12,7 +12,7 @@
 #- - - - - User Input Section - - - - - - - 
 # Install Google Chrome?
 echo Would you like to install Google Chrome? y/n
-read chrome
+read $chrome
 # Install additional PPAs?
 ppa=n
 # - - - - End User Input Section - - - - - -
