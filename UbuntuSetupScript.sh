@@ -16,6 +16,8 @@ read -r -p "Would you like to install Google Chrome? y=yes n=no: " chrome
 ppa=n
 # - - - - End User Input Section - - - - - -
 
+echo "you entered $chrome"
+
 if ($chrome = "y")
     then
     echo "Installing Google Chrome."
