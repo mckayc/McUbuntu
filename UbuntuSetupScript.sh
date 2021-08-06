@@ -16,9 +16,9 @@ read -r -p "Would you like to install Google Chrome? y=yes n=no: " chrome
 ppa=n
 # - - - - End User Input Section - - - - - -
 
-echo "you entered $chrome"
+echo "You entered $chrome"
 
-if ($chrome == "y");
+if [ $chrome -eq "y" ];
     then
     echo "Installing Google Chrome."
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
