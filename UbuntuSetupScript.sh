@@ -11,12 +11,12 @@
 
 #- - - - - User Input Section - - - - - - - 
 # Install Google Chrome?
-read "Would you like to install Google Chrome? y=yes n=no: " chrome
+read -p "Would you like to install Google Chrome? y=yes n=no: " chrome
 # Install additional PPAs?
 ppa=n
 # - - - - End User Input Section - - - - - -
 
-if [$chrome = "y"]
+if ($chrome = "y")
     then
     echo "Installing Google Chrome."
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
