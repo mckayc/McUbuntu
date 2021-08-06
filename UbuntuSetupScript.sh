@@ -11,7 +11,8 @@
 
 #- - - - - User Input Section - - - - - - - 
 # Install Google Chrome?
-read -p "Would you like to install Google Chrome? y=yes n=no: " chrome
+echo "Would you like to install Google Chrome? y=yes n=no: " 
+read chrome
 # Install additional PPAs?
 ppa=n
 # - - - - End User Input Section - - - - - -
