@@ -6,7 +6,7 @@
 #Install Google Chrome manually so that you have a browser to setup while everything else is downloading
 # - - - - - 
 #In terminal type/paste in the following command:
-# wget http://bit.ly/mckayubuntu ; chmod +x mckayubuntu ; ./mckayubuntu
+# wget -O UbuntuSetupScript.sh http://bit.ly/mckayubuntu ; chmod +x UbuntuSetupScript.sh ; ./UbuntuSetupScript.sh
 #-------------------------------------------------------
 
 #- - - - - User Input Section - - - - - - - 
