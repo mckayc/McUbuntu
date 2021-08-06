@@ -10,23 +10,101 @@
 #-------------------------------------------------------
 
 #- - - - - User Input Section - - - - - - - 
-# Install Google Chrome?
 read -r -p "Would you like to install Google Chrome? y=yes n=no: " chrome
-# Install additional PPAs?
-ppa=n
+read -r -p "Would you like to install additional Multimedia players? y=yes n=no: " mediaplayers
+read -r -p "Would you like to install additional tools? y=yes n=no: " tools
+read -r -p "Would you like to install some popular Games? y=yes n=no: " games
+read -r -p "Would you like to install photo and video editing tools? y=yes n=no: " multimediaediting
 # - - - - End User Input Section - - - - - -
 
-echo "You entered $chrome"
-
-if [ $chrome -eq "y" ];
+if [ $chrome == "y" ];
     then
     echo "Installing Google Chrome."
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
     sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-    sudo apt-get update
-    sudo apt-get install google-chrome-stable
+    sudo apt update
+    sudo apt install google-chrome-stable
 fi
     echo "You have chosen not to install Chrome."
+
+if [ $multimediaediting == "y" ];
+    then
+    echo "Installing Multimedia Editing Tools."
+    sudo apt install -y kdenlive 
+    sudo apt install -y darktable 
+    sudo apt install -y gimp 
+    sudo apt install -y gimp-data-extras 
+    sudo apt install -y gimp-gmic 
+    sudo apt install -y gimp-plugin-registry 
+    sudo apt install -y inkscape 
+    sudo apt install -y blender 
+    sudo apt install -y audacity 
+    sudo apt install -y lmms
+    sudo apt install -y obs-studio 
+fi
+    echo "You have chosen not to install Multimedia Editing Tools."
+
+if [ $tools == "y" ];
+    then
+    echo "Installing additional tools."
+    sudo apt install -y synaptic 
+    sudo apt install -y qbittorrent
+    sudo apt install -y speedcrunch 
+fi
+    echo "You have chosen not to install additional tools."
+
+if [ $mediaplayers == "y" ];
+    then
+    echo "Installing Multimedia Players."
+    sudo apt install -y vlc
+fi
+    echo "You have chosen not to install additional Multimedia Players."
+
+if [ $games == "y" ];
+    then
+    echo "Installing more Games."
+    sudo apt install -y 0ad
+    sudo apt install -y supertuxkart
+    sudo apt install -y neverball
+    sudo apt install -y neverputt
+    sudo apt install -y alien-arena
+    sudo apt install -y hedgewars
+    sudo apt install -y teeworlds
+    sudo apt install -y astromenace
+fi
+    echo "You have chosen not to install additional games."
+
+
+
+
+#  
+# 
+# 
+#  
+#  
+# sudo apt install -y openvpn 
+# sudo apt install -y network-manager-openvpn 
+# sudo apt install -y solaar 
+# sudo apt install -y playonlinux 
+# sudo apt install -y ffmpeg 
+# 
+# sudo apt install -y mirage 
+# sudo apt install -y hydrogen 
+# sudo apt install -y exfat-utils 
+# sudo apt install -y gparted 
+# sudo apt install -y rar 
+# sudo apt install -y unrar-free 
+# sudo apt install -y woeusb 
+# sudo apt install -y vlc-plugin-fluidsynth 
+# sudo apt install -y fluid-soundfont-gs 
+# sudo apt install -y fluid-soundfont-gm 
+# 
+# sudo apt install -y handbrake 
+# sudo apt install -y freecad 
+# sudo apt install -y unetbootin 
+# sudo apt install -y ubuntu-make 
+# sudo apt install -y grsync 
+# sudo apt install -y git
 
 
 # #Add PPA Repositories
@@ -56,54 +134,54 @@ fi
 
 
 # #Update all packages
-# sudo apt-get update 
+# sudo apt update 
 
 # #Remove Packages
-# sudo apt-get purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
+# sudo apt purge -y rhythmbox transmission-gtk transmission-common totem totem-common totem-plugins amarok dragonplayer
 
 # #Install Packages - Need to do this line at a time so it does not break
-# sudo apt-get install -y kdenlive 
-# sudo apt-get install -y darktable 
-# sudo apt-get install -y vlc 
-# sudo apt-get install -y synaptic 
-# sudo apt-get install -y gimp 
-# sudo apt-get install -y gimp-data-extras 
-# sudo apt-get install -y gimp-gmic 
-# sudo apt-get install -y gimp-plugin-registry 
-# sudo apt-get install -y inkscape 
-# sudo apt-get install -y qbittorrent 
-# sudo apt-get install -y blender 
-# sudo apt-get install -y audacity 
-# sudo apt-get install -y lmms 
-# sudo apt-get install -y openvpn 
-# sudo apt-get install -y network-manager-openvpn 
-# sudo apt-get install -y solaar 
-# sudo apt-get install -y playonlinux 
-# sudo apt-get install -y ffmpeg 
-# sudo apt-get install -y obs-studio 
-# sudo apt-get install -y mirage 
-# sudo apt-get install -y hydrogen 
-# sudo apt-get install -y exfat-utils 
-# sudo apt-get install -y gparted 
-# sudo apt-get install -y rar 
-# sudo apt-get install -y unrar-free 
-# sudo apt-get install -y woeusb 
-# sudo apt-get install -y vlc-plugin-fluidsynth 
-# sudo apt-get install -y fluid-soundfont-gs 
-# sudo apt-get install -y fluid-soundfont-gm 
-# sudo apt-get install -y speedcrunch 
-# sudo apt-get install -y handbrake 
-# sudo apt-get install -y freecad 
-# sudo apt-get install -y unetbootin 
-# sudo apt-get install -y ubuntu-make 
-# sudo apt-get install -y grsync 
-# sudo apt-get install -y git
+# sudo apt install -y kdenlive 
+# sudo apt install -y darktable 
+# sudo apt install -y vlc 
+# sudo apt install -y synaptic 
+# sudo apt install -y gimp 
+# sudo apt install -y gimp-data-extras 
+# sudo apt install -y gimp-gmic 
+# sudo apt install -y gimp-plugin-registry 
+# sudo apt install -y inkscape 
+# sudo apt install -y qbittorrent 
+# sudo apt install -y blender 
+# sudo apt install -y audacity 
+# sudo apt install -y lmms 
+# sudo apt install -y openvpn 
+# sudo apt install -y network-manager-openvpn 
+# sudo apt install -y solaar 
+# sudo apt install -y playonlinux 
+# sudo apt install -y ffmpeg 
+# sudo apt install -y obs-studio 
+# sudo apt install -y mirage 
+# sudo apt install -y hydrogen 
+# sudo apt install -y exfat-utils 
+# sudo apt install -y gparted 
+# sudo apt install -y rar 
+# sudo apt install -y unrar-free 
+# sudo apt install -y woeusb 
+# sudo apt install -y vlc-plugin-fluidsynth 
+# sudo apt install -y fluid-soundfont-gs 
+# sudo apt install -y fluid-soundfont-gm 
+# sudo apt install -y speedcrunch 
+# sudo apt install -y handbrake 
+# sudo apt install -y freecad 
+# sudo apt install -y unetbootin 
+# sudo apt install -y ubuntu-make 
+# sudo apt install -y grsync 
+# sudo apt install -y git
 
 # #Not working for some reason:
-# # sudo apt-get install -y shutter etcher-electron youtube-dlg
+# # sudo apt install -y shutter etcher-electron youtube-dlg
 
 # #Upgrade all packages
-# sudo apt-get upgrade -y
+# sudo apt upgrade -y
 
 # #Install Google WebFonts
 # curl https://raw.githubusercontent.com/qrpike/Web-Font-Load/master/install.sh | bash
@@ -111,11 +189,11 @@ fi
 # # -----------------------------------------
 # #Install things that need confirmation last
   
-# sudo apt-get install -y qjackctl 
-# sudo apt-get install -y virtualbox
-# sudo apt-get install -y virtualbox-ext-pack
-# sudo apt-get install -y virtualbox-guest-additions-iso
-# sudo apt-get install -y wireshark
+# sudo apt install -y qjackctl 
+# sudo apt install -y virtualbox
+# sudo apt install -y virtualbox-ext-pack
+# sudo apt install -y virtualbox-guest-additions-iso
+# sudo apt install -y wireshark
 
 
 # #Install VS Code via Umake
