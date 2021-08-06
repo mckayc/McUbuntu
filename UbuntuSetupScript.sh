@@ -11,19 +11,20 @@
 
 #- - - - - User Input Section - - - - - - - 
 # Install Google Chrome?
-chrome=y
+echo Would you like to install Google Chrome? y/n
+read chrome
 # Install additional PPAs?
 ppa=n
 # - - - - End User Input Section - - - - - -
 
-if [$chrome = "n"]
+if [$chrome = "y"]
     then
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
     sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
     sudo apt-get update
     sudo apt-get install google-chrome-stable
 fi
-    echo "You have chosen not to install Chrome"
+    echo "You have chosen not to install Chrome."
 
 
 # #Add PPA Repositories
